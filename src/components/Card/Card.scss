@@ -1,0 +1,136 @@
+.card {
+
+    // .card__inner
+    max-width: 440px;
+    width: 100%;
+    border: 1px solid #A2A3A4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
+
+    &__inner {
+        padding: 7px 15px 13px 15px;
+        display: block;
+    }
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .card__name
+
+    &__name {
+        font-size: 20px;
+        margin-bottom: 18px;
+        display: block;
+    }
+
+    &__more{
+        font-size: 14px;
+    }
+
+    // .card__profile
+
+    &__profile {
+        display: flex;
+        align-items: center;
+        gap: 0 26px;
+        margin-bottom: 13px;
+    }
+
+    // .card__profile-img
+
+    &__profile-img {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        object-fit: cover;
+    }
+
+    // .card__profile-name
+
+    &__profile-name {}
+
+    // .card__rates
+
+    &__rates {
+        display: flex;
+        gap: 0 38px;
+        margin-bottom: 15px;
+    }
+
+    // .card__rates-favorites
+
+    &__rates-favorites,
+    &__rates-watches {
+        font-size: 16px;
+        position: relative;
+        padding-left: 43px;
+    }
+
+    &__rates-favorites {
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            width: 25px;
+            height: 25px;
+
+            background-image: url('../../assets/images/favorites.png');
+        }
+    }
+
+    // .card__rates-watches
+
+    &__rates-watches {
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            width: 25px;
+            height: 25px;
+
+            background-image: url('../../assets/images/watches.png');
+        }
+    }
+
+    // .card__comment
+
+    &__comment {
+        padding: 0 15px 13px 15px;
+    }
+
+    // .card__comment-inner
+
+    &__comment-inner {
+        display: flex;
+    }
+
+    // .card__comment-input
+
+    &__comment-input {
+        width: 100%;
+        border: 1px solid #A2A3A4;
+        padding: 13px 13px 16px 13px;
+    }
+
+    // .card__comment-btn
+
+    &__comment-btn {
+        width: 63px;
+        background-color: #00A3FF;
+    }
+
+    &__comments-list {
+        overflow-y: scroll;
+        height: 30px;
+    }
+
+    &__comment-item {
+        padding: 0 0 13px 15px;
+    }
+
+}

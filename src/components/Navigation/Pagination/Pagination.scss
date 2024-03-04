@@ -1,0 +1,36 @@
+.pagination {
+
+    margin: 0 auto;
+
+    // .pagination__inner
+
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+
+
+    // .pagination__item
+
+    &__item {
+        width: 52px;
+        height: 52px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #A2A3A4;
+    }
+
+    &__item.active {
+        background-color: #00A3FF;
+        color: #fff;
+    }
+
+}
+
+.pagination-controls {
+
+    display: flex;
+    align-items: center;
+}
